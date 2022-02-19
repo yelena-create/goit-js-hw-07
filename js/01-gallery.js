@@ -23,9 +23,9 @@ const galleryListItemMarkup = galleryItems.map(galleryListItem)
 // console.log(galleryListItemMarkup);
 galleryEl.insertAdjacentHTML('beforeend', galleryListItemMarkup);
 
-const galleryImage = document.querySelector('.gallery__image');
-const galleryLink = document.querySelector('.gallery__link');
-const galleryItem = document.querySelector('.gallery__item');
+// const galleryImage = document.querySelector('.gallery__image');
+// const galleryLink = document.querySelector('.gallery__link');
+// const galleryItem = document.querySelector('.gallery__item');
 
 galleryEl.addEventListener('click', onGalleryClick, );
 
@@ -38,7 +38,7 @@ function onGalleryClick(evt) {
 	<img src = '${bigImg}'>
 `)
     instance.show();
- 
+
     galleryEl.addEventListener('keydown', onBigImgEscape);
 
     function onBigImgEscape(evt) {
