@@ -24,7 +24,7 @@ galleryEl.insertAdjacentHTML('beforeend', galleryListItemMarkup);
 
 // 
 galleryEl.addEventListener('click', onGalleryClick );
-let lightbox = new SimpleLightbox('.gallery a', {captionsData:'alt', captionDelay: 350} );
+let lightbox = new SimpleLightbox('.gallery a', {captionsData:'alt', captionDelay: 250} );
 
 function onGalleryClick(evt) { 
     evt.preventDefault();
