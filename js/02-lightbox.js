@@ -9,7 +9,7 @@ const galleryListItem = ({ preview, original, description }) => {
     return `
     <li>
         <a class="gallery__item" href="${original}">
-            <img class="gallery-image"
+            <img class="gallery__image"
             src="${preview}" 
             alt = "${description}"
 CX            />
