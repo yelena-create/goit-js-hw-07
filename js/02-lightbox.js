@@ -24,22 +24,22 @@ galleryEl.insertAdjacentHTML('beforeend', galleryListItemMarkup);
 
 // 
 galleryEl.addEventListener('click', onGalleryClick );
+let lightbox = new SimpleLightbox('.gallery a', {captionsData:'alt', captionDelay: 350} );
 
 function onGalleryClick(evt) { 
     evt.preventDefault();
 
-    let lightbox = new SimpleLightbox('.gallery a', {captionsData:'alt', captionDelay: 350} );
 
-    // galleryEl.addEventListener('keydown', onBigImgEscape);
+    galleryEl.addEventListener('keydown', onBigImgEscape);
 
-    // function onBigImgEscape(evt) {
-    //     console.log(evt.code);
-    //     if (evt.code === 'Escape') {
-    //         instance.close();
-    // galleryEl.removeEventListener('keydown',onBigImgEscape);
-
-    //     };
+    function onBigImgEscape(evt) {
+        console.log(evt.code);
+        if (evt.code === 'Escape') {
+            instance.close();
+    galleryEl.removeEventListener('keydown',onBigImgEscape);
+        };
     }
+};
     
 
 
